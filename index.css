@@ -1,0 +1,718 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+@media only screen and (min-width:1440px) {
+    .lord-icon {
+        width: 25px;
+        height: 25px;
+        margin-top: 5px;
+    }
+
+    .nav-hamburger-nd-logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .nav-hamburger {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .nav-hamburger>img {
+
+        /* border: 1px solid white; */
+        border-radius: 50%;
+        width: 35px;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .nav-hamburger>img:hover {
+        background-color: #272727;
+    }
+
+
+    .nav-logo {
+        width: fit-content;
+        height: fit-content;
+        cursor: pointer;
+    }
+
+    .nav-logo>img {
+        width: 110px;
+        height: 40px;
+    }
+
+    input[type="text"] {
+        width: 500px;
+        height: 35px;
+        background-color: transparent;
+        border: 1px solid grey;
+        border-radius: 30px 0 0 30px;
+
+    }
+
+    input[type="text"]::placeholder {
+        padding-left: 20px;
+        /* font-family: Roboto;
+        font-weight: 400;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.88); */
+    }
+
+    input:focus {
+        outline: 1px solid #1C62B9;
+        border: none;
+    }
+
+
+
+    .nav-michrophone {
+        width: fit-content;
+        margin-top: 3px;
+    }
+
+    .nav-michrophone>img {
+        width: 35px;
+        background-color: #3D3D3D;
+        height: 35px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .nav-search-nd-michrophone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .nav-three-dots {
+        width: 30px;
+        height: 28px;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .nav-three-dots>img {
+        width: 20px;
+        height: 20px;
+    }
+
+
+
+    .nav-dots-nd-profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+    }
+
+    .nav-bar {
+        /* position: fixed !important; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+        position: fixed;
+    }
+
+    .icon-nd-signin {
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 0 10px;
+        border-radius: 30px;
+        padding-bottom: 4px;
+        border: none;
+        outline: 2px solid #222222;
+        cursor: pointer;
+    }
+
+    .icon-nd-signin>h3 {
+        color: #3EA6FF;
+        width: fit-content;
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .search-icon>img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .search-icon {
+        cursor: pointer;
+        background-color: #222222;
+        height: 37px;
+        width: 61px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 30px 30px 0;
+    }
+
+    .search-bar-nd-search-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1px;
+    }
+}
+
+
+@media only screen and (max-width:1440px) {
+    .lord-icon {
+        width: 25px;
+        height: 25px;
+        margin-top: 5px;
+    }
+
+    .nav-hamburger-nd-logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .nav-hamburger {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .nav-hamburger>img {
+
+        /* border: 1px solid white; */
+        border-radius: 50%;
+        width: 35px;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .nav-hamburger>img:hover {
+        background-color: #272727;
+    }
+
+
+    .nav-logo {
+        width: fit-content;
+        height: fit-content;
+        cursor: pointer;
+    }
+
+    .nav-logo>img {
+        width: 110px;
+        height: 40px;
+    }
+
+    input[type="text"] {
+        width: 500px;
+        height: 35px;
+        background-color: transparent;
+        border: 1px solid grey;
+        border-radius: 30px 0 0 30px;
+
+    }
+
+    input[type="text"]::placeholder {
+        padding-left: 20px;
+        /* font-family: Roboto;
+        font-weight: 400;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.88); */
+    }
+
+    input:focus {
+        outline: 1px solid #1C62B9;
+        border: none;
+    }
+
+
+
+    .nav-michrophone {
+        width: fit-content;
+        margin-top: 3px;
+    }
+
+    .nav-michrophone>img {
+        width: 35px;
+        background-color: #3D3D3D;
+        height: 35px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .nav-search-nd-michrophone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .nav-three-dots {
+        width: 30px;
+        height: 28px;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .nav-three-dots>img {
+        width: 20px;
+        height: 20px;
+    }
+
+
+
+    .nav-dots-nd-profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+    }
+
+    .nav-bar {
+        /* position: fixed !important; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: fixed;
+        padding: 10px;
+    }
+
+    .icon-nd-signin {
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 0 10px;
+        border-radius: 30px;
+        padding-bottom: 4px;
+        border: none;
+        outline: 2px solid #222222;
+        cursor: pointer;
+    }
+
+    .icon-nd-signin>h3 {
+        color: #3EA6FF;
+        width: fit-content;
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .search-icon>img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .search-icon {
+        cursor: pointer;
+        background-color: #222222;
+        height: 37px;
+        width: 61px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 30px 30px 0;
+    }
+
+    .search-bar-nd-search-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1px;
+    }
+}
+
+
+@media only screen and (max-width:1024px) {
+    input[type="text"] {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .lord-icon {
+
+        width: 20px;
+        height: 18px;
+    }
+
+    .lord-icon>h3 {
+
+        font-size: 12px;
+    }
+
+    .nav-three-dots {
+        height: 22px;
+    }
+
+    .nav-michrophone>img {
+        width: 35px;
+        height: 30px;
+    }
+
+    .nav-logo>img {
+        width: 90px;
+        height: 35px;
+    }
+
+    .search-icon {
+
+        width: 48px;
+        height: 32px;
+    }
+
+    input[type="text"] {
+        height: 31px;
+    }
+
+
+}
+
+@media only screen and (max-width:700px) {
+    .nav-three-dots>img {
+
+        margin-top: 0px;
+    }
+
+    input[type="text"] {
+        width: 200px;
+    }
+
+    .nav-hamburger>img {
+        width: 40px;
+    }
+}
+
+
+@media only screen and (max-width:644px) {
+    .icon-nd-signin>h3 {
+        font-size: 10px;
+    }
+
+    .lord-icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    .nav-three-dots>img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .nav-michrophone>img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .search-icon>img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .search-icon {
+        width: 35px;
+        height: 25px;
+    }
+
+    input[type="text"] {
+        height: 23px;
+    }
+
+    input[type="text"]::placeholder {
+        font-size: 10px;
+    }
+
+    .nav-logo>img {
+        width: 90px;
+        height: 30px;
+
+    }
+
+    .nav-hamburger>img {
+        width: 30px;
+    }
+}
+
+@media only screen and (max-width:587px) {
+    input[type="text"] {
+        width: 125px;
+    }
+
+    .nav-three-dots {
+        margin-top: 0;
+    }
+
+    .nav-hamburger>img {
+        width: 30px;
+    }
+}
+
+
+@media only screen and (max-width:451px) {
+    .nav-hamburger {
+        display: flex;
+    }
+
+    .nav-hamburger>img {
+        width: 25px;
+    }
+
+    .nav-hamburger-nd-logo {
+        gap: 0;
+    }
+
+    .nav-logo {
+        display: flex;
+    }
+
+    .nav-logo>img {
+        width: 59px;
+        height: 20px;
+    }
+
+    input[type="text"] {
+        width: 125px;
+        height: 18px;
+    }
+
+    input[type="text"]::placeholder {
+        font-size: 8px;
+    }
+
+    .search-icon {
+        width: 25px;
+        height: 19px;
+    }
+
+    .search-icon>img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .nav-search-nd-michrophone {
+        gap: 5px;
+    }
+
+    .nav-michrophone>img {
+        height: 17px;
+        width: 17px;
+        margin-top: 1px;
+    }
+
+    .nav-dots-nd-profile {
+        gap: 0;
+    }
+
+    .nav-three-dots>img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .lord-icon {
+        width: 10px;
+        height: 10px;
+    }
+
+    .icon-nd-signin>h3 {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width:374px) {
+    input[type="text"] {
+        width: 75px;
+    }
+
+    input[type="text"]::placeholder {
+        padding-left: 10px;
+
+    }
+
+    .nav-dots-nd-profile {
+        gap: 0;
+    }
+}
+
+@media only screen and (max-width:327px) {
+    .nav-bar {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .nav-dots-nd-profile {
+        padding-right: 5px;
+        gap: 0;
+    }
+
+}
+
+/* End of Nav Bar */
+
+.side-bar {
+
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 20px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+
+}
+
+.side-bar:hover {
+    background-color: #272727;
+}
+
+.side-bar span {
+    color: white;
+}
+.side-bar>img{
+    width: 15px;
+    height: 15px;
+}
+hr {
+    width: 100%;
+    margin: 10px 0 10px 0px;
+
+}
+
+.left-side-bar {
+    position: relative;
+    top: 75px;
+    padding-left: 20px;
+
+
+
+
+}
+
+.left-side-bar>h3 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    width: 12%;
+    margin-left: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.suggestion-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 100;
+    color: white;
+    position: relative;
+    top: 75px;
+    /* overflow: scroll; */
+    /* gap: 25px; */
+}
+
+.left-bar-nd-right-cntnt {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 24px;
+
+}
+
+.suggestion-bar>h3 {
+    padding: 10px;
+    cursor: pointer;
+    width: fit-content; 
+    /* border: 1px solid white; */
+}
+
+.suggestion-bar>h3:hover {
+    background-color: #272727;
+    border-radius: 5px;
+}
+
+.picture-1-2-3 {
+    position: relative;
+    top: 85px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.picture-1,
+.picture-2,
+.picture-3 {
+    width: 250px;
+    height: 190px;
+    margin-top: 15px;
+}
+
+.picture-1>img:nth-child(1),
+.picture-2>img:nth-child(1),
+.picture-3>img:nth-child(1) {
+    width: 250px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.dp-nd-title{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    gap: 10px;
+}
+.dp-nd-title>h3{
+    font-size: 10px;
+    font-weight: 500;
+    color: #f1f1f1;
+    height: 21px;
+    margin-top: 10px;
+}
+.picture-1>h3, .picture-2>h3, .picture-3>h3{
+    font-size: 10px;
+    font-weight: 500;
+    color: #AAAAAA;
+    margin-left: 33px;
+    margin-top: 4px;
+}
+.picture-1>p, .picture-2>p, .picture-3>p{
+    font-size: 10px;
+    font-weight: 500;
+    color: #AAAAAA;
+    margin: 2px 0 0px 33px;
+}
+
